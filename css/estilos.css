@@ -1,0 +1,64 @@
+body, input, button{
+ font-family: "Montserrat", sans-serif;
+}
+img{
+	width: 100%;
+	vertical-align: top;
+}
+input{
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	width: calc(100% - 100px);
+}
+#pass{
+	width: calc(100% - 130px);
+}
+.linea{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+}
+.linea label{
+	width: 90px;
+	font-size: 0.85em;
+}
+.ojo{
+	width: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.boton{
+	text-align: center;
+}
+
+.boton input{
+	background-color: cornflowerblue;
+	color: white;
+	width: 120px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+fieldset{
+	border: 1px dotted gray;
+	border-radius: 7px;
+	width: 350px;
+	margin: auto;
+	padding: 15px 30px;
+}
+h1{
+	margin-top: 0px;
+}
+.error{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 3px;
+  font-size: 0.5em;
+}
+.errores{
+	margin-top: 25px;
+}
