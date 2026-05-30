@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,126 +7,194 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<script type="text/javascript" src="js/videos.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 
-
 <main>
 	<nav>
+		<div class="logo">🏨 AlojamientosSV</div>
 		<div class="enlaces">
-			<a href="#inicio.html">Inicio</a>
-			<a href="#ofertas.html">Oferta</a>
-			<a href="#productos.html">Productos</a>
-			<a href="#contacto.html">Contacto</a>
+			<a href="#inicio">Inicio</a>
+			<a href="#ofertas">Oferta</a>
+			<a href="#nosotros">Nosotros</a>
+			<a href="#contacto">Contacto</a>
 		</div>
 		<div class="burger">
-			<img src="img/burger.svg">
+			<img src="img/burger.svg" alt="menú">
 		</div>
 	</nav>
-	<header>
-        
+
+	<header id="inicio">
 		<div class="portada">
-       <picture>
-         <source srcset="img/largo.jpg" media="(min-width:800px)">
-         <source srcset="img/medio.jpg" media="(min-width:400px)">
-          <img src="img/peque.jpeg">
-        </picture>
-      </div>
-    
-      <div class="titular">
-        <span>Tu Sitio de Alojamientos Turisticos</span>
-		<h1>Alojamientos turisticos de El Salvador</h1>
-<p>Encuentra los mejores alojamientos turisticos de El Salvador, con las mejores ofertas y promociones para que puedas disfrutar de tu viaje al maximo.</p>
-<p>En nuestro sitio web, ofrecemos una amplia variedad de opciones de alojamiento, desde hoteles de lujo hasta hostales económicos, para que puedas encontrar el lugar perfecto para tu estancia en El Salvador.</p>	
-<p>Cabañas, tiendas de souvenirs, restaurantes, glamping, entre otros</p>
-      </div>
-      </header>
-	<section>
-		<h1>Nuestras propuestas:</h1>
-		<div class="bloque">
-		
+			<picture>
+				<source srcset="img/largo.jpg" media="(min-width:800px)">
+				<source srcset="img/medio.jpg" media="(min-width:400px)">
+				<img src="img/peque.jpeg" alt="Alojamientos El Salvador">
+			</picture>
 		</div>
+		<div class="titular">
+			<span>Tu Sitio de Alojamientos Turísticos</span>
+			<h1>Alojamientos turísticos de El Salvador</h1>
+			<p>Encuentra los mejores alojamientos turísticos de El Salvador, con las mejores ofertas y promociones.</p>
+			<a href="#ofertas" class="cta-btn">Ver Ofertas</a>
+		</div>
+	</header>
+
+	<section id="ofertas" class="seccion-propuestas">
+		<h1>Nuestras propuestas:</h1>
+		<div class="bloque"></div>
 	</section>
 </main>
-<section>
-<article>
-	
-		<h1>Regístrate</h1>
-	<form method="post" action="">
-	<div class="linea">
-	<label for="usuario">Usuario:</label>
-	<input id="usuario" type="text" name="usuario" placeholder="Escribe tu nombre" autofocus>
-	</div>
-	
 
-	<div class="linea">
-	<label for="email">E-mail:</label>
-	<input id="email" type="email" name="email" placeholder="Escribe tu email">
-	</div>
-	
-	<div class="linea">
-			<label for="pass">Contraseña:</label>
-			<input id="pass" type="password" name="pass">
-		<div class="ojo">
-			<img src="img/ojoCerrado.png" alt="ojo cerrado">	
+<!-- SECCIÓN NOSOTROS -->
+<section id="nosotros" class="seccion-nosotros">
+	<div class="nosotros-container">
+		<div class="nosotros-texto">
+			<h2>¿Quiénes somos?</h2>
+			<p>Somos una empresa salvadoreña dedicada a conectar viajeros con los mejores alojamientos turísticos de El Salvador 🇸🇻. Desde hoteles de lujo hasta glamping en la naturaleza, te ofrecemos opciones para todos los gustos y presupuestos.</p>
+			<p>Nuestra misión es hacer que cada viaje sea una experiencia inolvidable, brindando información confiable, precios competitivos y un servicio de atención personalizado.</p>
+			<div class="nosotros-stats">
+				<div class="stat">
+					<span class="stat-num">+150</span>
+					<span class="stat-label">Alojamientos</span>
+				</div>
+				<div class="stat">
+					<span class="stat-num">+5K</span>
+					<span class="stat-label">Clientes felices</span>
+				</div>
+				<div class="stat">
+					<span class="stat-num">14</span>
+					<span class="stat-label">Departamentos</span>
+				</div>
+			</div>
+		</div>
+		<div class="nosotros-valores">
+			<h2>Nuestros valores</h2>
+			<div class="valores-grid">
+				<div class="valor-card">
+					<i class="fas fa-heart"></i>
+					<h3>Pasión</h3>
+					<p>Amamos El Salvador y queremos que tú también lo conozcas en toda su belleza.</p>
+				</div>
+				<div class="valor-card">
+					<i class="fas fa-shield-alt"></i>
+					<h3>Confianza</h3>
+					<p>Todos nuestros alojamientos son verificados para garantizar tu seguridad.</p>
+				</div>
+				<div class="valor-card">
+					<i class="fas fa-leaf"></i>
+					<h3>Sostenibilidad</h3>
+					<p>Promovemos el turismo responsable que cuida el medio ambiente.</p>
+				</div>
+				<div class="valor-card">
+					<i class="fas fa-star"></i>
+					<h3>Calidad</h3>
+					<p>Seleccionamos solo los mejores lugares para tu estancia.</p>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	
-<div class="boton">
-	<input type="submit" value="Enviar datos">
-</div>
-<div class="errores">
-	
-</div>
-	
-</form>
-</fieldset>
-<script src="js/input.js"></script>
-</article>
 </section>
-<footer>
-	<footer class="site-footer">
-  <div class="footer-container">
-    
-    
-    <div class="footer-column">
-      <h3>Sobre Nosotros</h3>
-      <p>Somos una empresa dedicada a el turismo en El Salvador.</p>
-    </div>
 
-    <div class="footer-column">
-      <h3>Enlaces Útiles</h3>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#ofertas">Oferta</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
+<!-- FORMULARIO DE CONTACTO -->
+<section id="contacto" class="seccion-contacto">
+	<article class="form-wrapper">
+		<h1>Regístrate</h1>
+		<form method="post" action="">
+			<div class="linea">
+				<label for="usuario">Usuario:</label>
+				<input id="usuario" type="text" name="usuario" placeholder="Escribe tu nombre" autofocus>
+			</div>
 
-    <!-- Columna 3: Contacto y Redes -->
-    <div class="footer-column">
-      <h3>Contacto</h3>
-      <p>Email: contacto@tuweb.com</p>
-      <p>Teléfono: +503 2220 8731</p>
-      <div class="social-links">
-        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
-        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
+			<div class="linea">
+				<label for="comentario">Comentario</label>
+				<input id="comentario" type="text" name="comentario" placeholder="Escribe tus dudas o comentarios" maxlength="500">
+			</div>
+			<div class="char-counter" id="char-counter">0 / 500
+			</div>
 
-  </div>
+			<div class="linea">
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="Escribe tu email">
+			</div>
 
-  <div class="footer-bottom">
-    <p> &#169 2026 Tu Sitio Web. Todos los derechos reservados.</p>
-  </div>
-  </footer>
+			<div class="linea">
+				<label for="pass">Contraseña:</label>
+				<input id="pass" type="password" name="pass">
+				<div class="ojo">
+					<img src="img/ojoCerrado.png" alt="ojo cerrado">
+				</div>
+			</div>
+
+			<div class="boton">
+				<input type="submit" value="Enviar datos">
+			</div>
+			<div class="errores"></div>
+		</form>
+	</article>
+</section>
+
+<footer class="site-footer">
+	<div class="footer-container">
+		<div class="footer-column">
+			<h3>Sobre Nosotros</h3>
+			<p>Somos una empresa dedicada al turismo en El Salvador.
+				<img src="https://flagcdn.com/16x12/sv.png" alt="Bandera de El Salvador" style="width:16px;vertical-align:middle;margin-left:5px;">
+			</p>
+		</div>
+		<div class="footer-column">
+			<h3>Enlaces Útiles</h3>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#ofertas">Ofertas</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<h3>Contacto</h3>
+			<p><i class="fas fa-envelope"></i> contacto@tuweb.com</p>
+			<p><i class="fas fa-phone"></i> +503 2220 8731</p>
+			<div class="social-links">
+				<a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+				<a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a>
+				<a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy; 2026 Alojamientos Turísticos SV. Todos los derechos reservados.</p>
+	</div>
 </footer>
+
+<!-- Modal de alerta de errores -->
+<div id="modal-errores" class="modal-overlay" style="display:none;">
+	<div class="modal-box">
+		<div class="modal-icon">⚠️</div>
+		<h2>Por favor corrige los siguientes errores:</h2>
+		<ul id="lista-errores"></ul>
+		<button id="modal-close">Entendido</button>
+	</div>
+</div>
+
+<!-- Modal de éxito con confetti -->
+<div id="modal-exito" class="modal-overlay" style="display:none;">
+	<div class="modal-box modal-exito-box">
+		<canvas id="confetti-canvas"></canvas>
+		<div class="exito-content">
+			<div class="exito-icon">🎉</div>
+			<h2>¡Gracias por tu comentario!</h2>
+			<p>Hola, <strong class="exito-nombre"></strong>! 🎊 Recibimos tu mensaje y nos pondremos en contacto pronto.</p>
+			<button id="exito-close">¡Genial!</button>
+		</div>
+	</div>
+</div>
+
+<script src="js/input.js"></script>
 </body>
 </html>
